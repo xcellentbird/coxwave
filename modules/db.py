@@ -1,8 +1,10 @@
 from pymilvus import MilvusClient, model
 from pymilvus.model.base import BaseEmbeddingFunction
 from openai import AsyncOpenAI
-from config import OPENAI_API_KEY, OPENAI_TEXT_EMBEDDING_MODEL, COLLECTION_NAME, DB_PATH
+from config import OPENAI_API_KEY, OPENAI_TEXT_EMBEDDING_MODEL, COLLECTION_NAME
 
+
+DB_PATH = "datas/final_result.db"
 
 
 async def get_embedding(text: str):

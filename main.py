@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 import json
-from assistant import Assistant
+from modules.assistant import Assistant
 
 app = FastAPI()
 

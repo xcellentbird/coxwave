@@ -1,5 +1,6 @@
 .env
 /.idea
 /__pycache__
+modules/__pycache__
 datas/.*
 datas/final_result.pkl

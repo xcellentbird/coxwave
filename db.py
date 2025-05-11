@@ -78,7 +78,7 @@ class FaqCollection(MilvusCollection):
         }
         output_fields = ["question", "answer"]
 
-        return super().vector_search(
+        return await super().vector_search(
             query=query, 
             limit=limit, 
             search_params=search_params, 

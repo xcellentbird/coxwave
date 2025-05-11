@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 from openai import AsyncOpenAI
 from openai.types.completion_usage import CompletionUsage
-from db import FaqCollection
+from modules.db import FaqCollection
 from config import OPENAI_API_KEY, OPENAI_MODEL
 from prompt import INSTRUCTION_PROMPT, RAG_PROMPT_TEMPLATE, OutputStructure, REQUERY_PROMPT, REQUERY_USER_PROMPT_TEMPLATE, RequeryResponse
 
